@@ -1,19 +1,25 @@
 package org.Spring;
 
 public class Dev {
+    //OBJECTS
+    private Laptop laptop;
 
-    //private Laptop laptop;
-
-    //FOR AGE since it's private, to access from another class you need to create getter and setter
+    //VARIABLE
+    // FOR AGE since it's private, to access from another class you need to create getter and setter
    private int age;
 
+   //CONSTRUCTORS
     public Dev(){
         System.out.println("Dev class constructor compiling");
     }
 
+    public Dev(int age){
+        this.age = age;
+        System.out.println("Dev 1 constructor");
+    }
+
+
     //AGE GETTER & SETTER after constructor
-
-
     public int getAge() {
         return age;
     }
@@ -22,8 +28,9 @@ public class Dev {
         this.age = age;
     }
 
+    //METHODS
     public void build(){
-
         System.out.println("Dev: build method compiling");
+        laptop.compile();
     }
 }

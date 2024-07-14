@@ -8,12 +8,19 @@
 <!--THIS IS BEAN FOR Dev class. ID it's optional-->
     <bean id="dev" class="org.Spring.Dev">
 <!--Here assign properties for this class-->
-        <property name="age" value="12"/>
+<!--SETTER INJECTION-->
+<!--        <property name="age" value="12"/>-->
+
+<!--CONSTRUCTOR INJECTION-->
+<!--        <constructor-arg value="14"/>-->
+
+<!--INJECTING CLASS INSTANCE TO THIS OBJ-->
+        <property name="laptop"
     </bean>
 
 
-    <bean id="dev1" class="org.Spring.Dev">
-    </bean>
+<!--    <bean id="dev1" class="org.Spring.Dev">-->
+<!--    </bean>-->
 
     <bean id="laptop" class="org.Spring.Laptop">
     </bean>

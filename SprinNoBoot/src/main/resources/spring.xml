@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--CREATING BEAN: You have to use the qualified name for the class - org.Spring.Dev-->
+<!--THIS IS BEAN FOR Dev class. ID it's optional-->
+    <bean id="dev" class="org.Spring.Dev">
+<!--Here assign properties for this class-->
+        <property name="age" value="12"/>
+    </bean>
+
+
+    <bean id="dev1" class="org.Spring.Dev">
+    </bean>
+
+    <bean id="laptop" class="org.Spring.Laptop">
+    </bean>
+
+
+
+</beans>

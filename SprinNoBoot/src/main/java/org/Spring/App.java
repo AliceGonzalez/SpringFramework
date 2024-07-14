@@ -1,10 +1,20 @@
 package org.Spring;
 
-public class App 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App
 {
     public static void main( String[] args )
     {
-        Dev obj = new Dev();
-        obj.build();
+        //THIS CREATES THE SPRING CONTAINER. Application Context is an interface
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        //Dev devObj = new Dev();
+
+        //TO GET THE OBJ
+        Dev devObj = (Dev) context.getBean("dev");
+        //devObj.setAge(18);
+        System.out.println(devObj.getAge());
+        //devObj.build();
     }
 }

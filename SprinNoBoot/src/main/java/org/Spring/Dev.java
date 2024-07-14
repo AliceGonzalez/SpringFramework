@@ -28,6 +28,14 @@ public class Dev {
         this.age = age;
     }
 
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
     //METHODS
     public void build(){
         System.out.println("Dev: build method compiling");

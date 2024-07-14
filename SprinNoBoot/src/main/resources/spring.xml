@@ -15,14 +15,14 @@
 <!--        <constructor-arg value="14"/>-->
 
 <!--INJECTING CLASS INSTANCE TO THIS OBJ-->
-        <property name="laptop"
+        <property name="laptop" ref="laptop1"/>
     </bean>
 
 
 <!--    <bean id="dev1" class="org.Spring.Dev">-->
 <!--    </bean>-->
 
-    <bean id="laptop" class="org.Spring.Laptop">
+    <bean id="laptop1" class="org.Spring.Laptop">
     </bean>
 
 

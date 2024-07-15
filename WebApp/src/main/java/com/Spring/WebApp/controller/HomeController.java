@@ -1,14 +1,12 @@
-package com.Spring.WebApp;
+package com.Spring.WebApp.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
 
-    //METHOD
+    //REQUESTS - Here we're creating a request to server, mapping and returning the data
     @RequestMapping("/")
     public String greet(){
         return "Welcome to my Spring WebApp!!!";

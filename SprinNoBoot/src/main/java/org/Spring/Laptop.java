@@ -1,10 +1,10 @@
 package org.Spring;
 
-public class Laptop {
+public class Laptop implements Computer {
 
     //CONSTRUCTOR
     public Laptop(){
-        System.out.println("Laptop class constructor compiling");
+        System.out.println("Laptop constructor compiling");
     }
 
 

@@ -4,9 +4,26 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+<!--DEV OBJ-->
+    <bean id="dev" class="org.Spring.Dev" autowire="byName">
+<!--        <property name="comp" ref="desktop"/>-->
+    </bean>
+
+<!--LAPTOP OBJ-->
+    <bean id="comp" class="org.Spring.Laptop">
+
+    </bean>
+<!--DESKTOP OBJ-->
+    <bean id="desktop1" class="org.Spring.Desktop" primary="true">
+
+    </bean>
+</beans>
+
+
 <!--CREATING BEAN: You have to use the qualified name for the class - org.Spring.Dev-->
 <!--THIS IS BEAN FOR Dev class. ID it's optional-->
-    <bean id="dev" class="org.Spring.Dev">
+<!--    <bean id="dev" class="org.Spring.Dev">-->
 <!--Here assign properties for this class-->
 <!--SETTER INJECTION-->
 <!--        <property name="age" value="12"/>-->
@@ -14,17 +31,12 @@
 <!--CONSTRUCTOR INJECTION-->
 <!--        <constructor-arg value="14"/>-->
 
-<!--INJECTING CLASS INSTANCE TO THIS OBJ-->
-        <property name="laptop" ref="laptop1"/>
-    </bean>
+<!--INJECTING CLASS INSTANCE TO THIS OBJ (setter injection)-->
+<!--        <property name="laptop" ref="laptop1"/>-->
+<!--        <constructor-arg ref="laptop1"/>-->
+<!--    </bean>-->
 
 
 <!--    <bean id="dev1" class="org.Spring.Dev">-->
 <!--    </bean>-->
 
-    <bean id="laptop1" class="org.Spring.Laptop">
-    </bean>
-
-
-
-</beans>

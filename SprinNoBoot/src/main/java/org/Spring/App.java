@@ -9,12 +9,9 @@ public class App
     {
         //THIS CREATES THE SPRING CONTAINER. Application Context is an interface
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        //Dev devObj = new Dev();
 
         //TO GET THE OBJ
-        Dev devObj = (Dev) context.getBean("dev");
-        //devObj.setAge(18);
-        //System.out.println(devObj.getAge());
+        Dev devObj = context.getBean(Dev.class);
         devObj.build();
     }
 }
